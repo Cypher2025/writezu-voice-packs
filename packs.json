@@ -1,22 +1,30 @@
 {
   "schema": 1,
-  "engine_version": "1.0.0",
+  "engine_version": "0.0.1-test",
   "packs": {
+    "macos-aarch64-cpu": {
+      "url": "https://github.com/Cypher2025/writezu-voice-packs/releases/download/engine-0.0.1-test/VoiceEngine-macos-aarch64-cpu.zip",
+      "sha256": "4730f0e24cd403204f786db54e9887eafa022851e674c23d78fd85bda0cf3393",
+      "bytes": 113348796,
+      "exe": "VoiceEngine/VoiceEngine",
+      "backend": "cpu",
+      "installed_bytes": 283614635
+    },
     "windows-x86_64-cpu": {
-      "url": "https://github.com/Cypher2025/writezu-voice-packs/releases/download/engine-1.0.0/VoiceEngine-windows-x86_64-cpu.zip",
-      "sha256": "b2d31cf734ebca6972e70de3373ec9d28983c6f505c09407093f74767e02ea2e",
-      "bytes": 139459906,
+      "url": "https://github.com/Cypher2025/writezu-voice-packs/releases/download/engine-0.0.1-test/VoiceEngine-windows-x86_64-cpu.zip",
+      "sha256": "15eb9b44f170a3f19a8d79a7f282bd5981d8393b638f48d38ac6aeb90e14eac3",
+      "bytes": 139928674,
       "exe": "VoiceEngine/VoiceEngine.exe",
       "backend": "cpu",
-      "installed_bytes": 344555069
+      "installed_bytes": 345645158
     },
     "windows-x86_64-cuda": {
-      "url": "https://github.com/Cypher2025/writezu-voice-packs/releases/download/engine-1.0.0/VoiceEngine-windows-x86_64-cuda.zip",
-      "sha256": "90c7afedf728caa2c2792453dec1729ed3970a54fd1684322b895a8cde3eb8ff",
-      "bytes": 573969818,
+      "url": "https://github.com/Cypher2025/writezu-voice-packs/releases/download/engine-0.0.1-test/VoiceEngine-windows-x86_64-cuda.zip",
+      "sha256": "fbd9fcd38923ed27db424b186d569fb36b7de6646d721c7d8980f305ccb75d7d",
+      "bytes": 574438948,
       "exe": "VoiceEngine/VoiceEngine.exe",
       "backend": "cuda",
-      "installed_bytes": 981809784
+      "installed_bytes": 982898897
     }
   }
 }
