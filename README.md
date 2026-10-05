@@ -47,3 +47,13 @@ file reproduces the attribution and conditions the agreement requires.
 The `sha256` in `packs.json` is not decoration. Writezu hashes each archive as it downloads and
 refuses to unpack anything that does not match, so replacing a published asset without updating the
 catalogue will break installs for everyone.
+
+## Releases are never deleted
+
+Only superseded. `packs.json` is served with a five-minute cache, so for a while after any publish
+some installs are still following the previous catalogue — which is fine, because it names the
+previous release and those files are still here. Deleting a release is what breaks that: every
+cached catalogue pointing at it suddenly names assets that are gone, and the cache cannot be
+flushed or inspected.
+
+Old releases therefore stay, even once nothing current points at them.
